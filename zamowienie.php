@@ -18,20 +18,20 @@
                                         <option value="Zielony">Zielony</option>
                                         <option value="Biały">Biały</option>-->
                     <?php
-                    $conn = mysqli_connect('wojakiewicz.pl', 'wojakiewic_baza', 'bidn2912', 'wojakiewic_baza?zeroDateTimeBehavior=convertToNull', '3306');
+                    $conn = mysqli_connect('wojakiewicz.pl', 'wojakiewic_baza', 'bidn2912', 'wojakiewic_baza', '3306');
                     if (!$conn) {
                         die('Could not connect to MySQL: ' . mysqli_connect_error());
                     }
                     mysqli_query($conn, 'SET NAMES \'utf8\'');
 // TODO: insert your code here.
-                    
+
                     $tablica = [];
                     $query = "SELECT Asortyment FROM kwiaty";
                     $result = mysqli_query($conn, $query);
-                    echo "<script>console.log('$result');</script>";
-//                    for($i=0; $i<cfer; $i++){
-//                        
-//                    }
+
+                    while (($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) != NULL) {
+                        echo "<option value='" . $row["Asortyment"] . "'>" . $row["Asortyment"] . "</option>";
+                    } 
                     mysqli_close($conn);
                     ?>
                 </select>
@@ -43,8 +43,8 @@
 
         </div>
 
-        <?php
-        echo 'tutaj beda zamowienia';
-        ?>
+<?php
+echo 'tutaj beda zamowienia';
+?>
     </body>
 </html>
