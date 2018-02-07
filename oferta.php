@@ -1,3 +1,13 @@
+
+<html>
+    <head>
+        <title>stronka</title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <link href="bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <script src="javascript/jquery3.js" type="text/javascript"></script>
+        <script src="javascript/tworzenie_auto.js" type="text/javascript"></script>
+    </head>
+    <body>
 <?php
     $conn = mysqli_connect('wojakiewicz.pl', 'wojakiewic_baza', 'bidn2912', 'wojakiewic_baza', '3306');
     if (!$conn) {
@@ -30,3 +40,5 @@
         echo '</table></div>';
         mysqli_close($conn);
         ?>
+    </body>
+</html>

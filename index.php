@@ -20,14 +20,16 @@ and open the template in the editor.
     <body>
         
         <div>
-        <button id="btn1" >Złóż zamówienie</button>
+            <a href="zamowienie.php">Złóż zamówienie</a>
+            <br>
+        <a href="oferta.php" >Obejrzyj ofertę</a>
         <br>
-         <button id="btn2">Obejrzyj ofertę</button>
+         
         </div>
         
         
     <?php
-    $conn = mysqli_connect('wojakiewicz.pl', 'wojakiewic_baza', 'bidn2912', 'wojakiewic_baza?zeroDateTimeBehavior=convertToNull', '3306');
+    $conn = mysqli_connect('wojakiewicz.pl', 'wojakiewic_baza', 'bidn2912', 'wojakiewic_baza', '3306');
     if (!$conn) {
         die('Could not connect to MySQL: ' . mysqli_connect_error());
     }
