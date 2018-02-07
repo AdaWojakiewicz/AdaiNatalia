@@ -10,6 +10,7 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
+        <button id="btn1" >Złóż zamówienie</button>
         <?php
         // put your code here
         ?>
