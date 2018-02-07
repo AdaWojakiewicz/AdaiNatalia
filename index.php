@@ -20,6 +20,7 @@ and open the template in the editor.
                 height:150px;    
             }
             a{
+                padding:10px;
                 margin-top:15px;
                 margin-left:150px;
             }
