@@ -8,7 +8,7 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8">
         <link href="bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        <title></title>
+        <title>Kwiaty</title>
         <style>
             div
             {
@@ -20,9 +20,9 @@ and open the template in the editor.
                 height:150px;    
             }
             a{
-                padding:10px;
                 margin-top:15px;
                 margin-left:150px;
+                background-color: silver;
             }
         </style>
     </head>
