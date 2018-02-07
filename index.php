@@ -12,17 +12,27 @@ and open the template in the editor.
         <style>
             div
             {
-                background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+                background: linear-gradient(to right, rgba(0,0,255,0), rgba(0,0,255,1));
                 width:500px;
+                margin:auto;
+                position:relative;
+                top:50px;
+                height:150px;    
+            }
+            a{
+                margin-top:15px;
+                margin-left:150px;
             }
         </style>
     </head>
     <body>
         
         <div>
-            <a href="zamowienie.php">Złóż zamówienie</a>
+            <a class="btn btn-primary" href="zamowienie.php">Złóż zamówienie</a>
             <br>
-        <a href="oferta.php" >Obejrzyj ofertę</a>
+            <br>
+      
+        <a class="btn btn-primary" href="oferta.php" >Obejrzyj ofertę</a>
         <br>
          
         </div>
